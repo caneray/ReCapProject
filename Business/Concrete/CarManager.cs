@@ -39,7 +39,6 @@ namespace Business.Concrete
                 Brand brand = new Brand();
                 brand.BrandId = car.BrandId;
                 brand.BrandName = context.Brands.Where(c => c.BrandId == car.BrandId).First().BrandName;
-
                 
                 if (car.DailyPrice > 0 && brand.BrandName.Length>2 )
                 {
